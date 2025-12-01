@@ -21,12 +21,15 @@ const googleClient = new OAuth2Client(GOOGLE_CLIENT_ID);
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
-      "https://mern-todo-app-mu-three.vercel.app" 
+      "http://localhost:3000", // local dev
+      "https://mern-todo-app-mu-three.vercel.app", // main production
+      "https://mern-todo-app-git-main-sanjay-choudharis-projects.vercel.app", // vercel preview
+      "https://mern-todo-bzmljkh10-sanjay-choudharis-projects.vercel.app" // another preview
     ],
     credentials: true,
   })
 );
+
 
 app.use(express.json());
 
@@ -265,4 +268,5 @@ app.delete("/api/todos/:id", auth, async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://127.0.0.1:${PORT}`);
 });
+
 
