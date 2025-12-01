@@ -16,12 +16,9 @@
 
 ## 🌐 Live Demo
 
-🚀 **Frontend:** _coming soon_  
-🖥 **Backend API:** _coming soon_
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://mern-todo-app-mu-three.vercel.app)
+[![Backend](https://img.shields.io/badge/API-Render-blue)](https://mern-todo-app-sx7b.onrender.com)
 
-Stay tuned…
-
----
 
 # MERN Todo Application
 
