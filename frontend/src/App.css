@@ -1,0 +1,305 @@
+/* ————————————————————————————— */
+/*      GLOBAL PAGE (White UI)     */
+/* ————————————————————————————— */
+
+.App {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #f8f9fa; 
+  font-family: "Roboto", system-ui, sans-serif;
+  color: #202124;
+}
+
+.app-shell {
+  display: flex;
+  justify-content: center;
+  padding: 40px 12px;
+}
+
+/* ————————————————————————————— */
+/*            MAIN CARD             */
+/* ————————————————————————————— */
+
+.todo-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 32px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ————————————————————————————— */
+/*              HEADER              */
+/* ————————————————————————————— */
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.app-subtitle {
+  font-size: 14px;
+  color: #5f6368;
+  margin-top: 4px;
+}
+
+/* Status + Logout only on todo page */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-pill {
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 599px;
+  border: 1px solid #dadce0;
+  background: #18a416;
+}
+
+/* ————————————————————————————— */
+/*               BUTTONS            */
+/* ————————————————————————————— */
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Google Blue */
+.btn-primary {
+  background: #1a73e8;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1765cc;
+}
+
+/* Google Red */
+.btn-danger {
+  background: #fce8e6;
+  color: #d93025;
+}
+
+.btn-danger:hover {
+  background: #f8d2ce;
+}
+
+/* ————————————————————————————— */
+/*                FORM              */
+/* ————————————————————————————— */
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin: 24px 0 18px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+}
+
+.todo-input:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(26,115,232,0.18);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: #dadce0;
+  margin: 16px 0;
+}
+
+/* ————————————————————————————— */
+/*             TODO LIST            */
+/* ————————————————————————————— */
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ececec;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-text {
+  font-size: 15px;
+  color: #202124;
+}
+
+.empty-state {
+  text-align: center;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+/* ————————————————————————————— */
+/*               AUTH PAGE          */
+/* ————————————————————————————— */
+
+.auth-section {
+  margin-top: 10px;
+}
+
+/* Tabs on right side */
+.auth-tabs {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-tab {
+  border: 1px solid #dadce0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: white;
+}
+
+.auth-tab-active {
+  background: #e8f0fe;
+  border-color: #1a73e8;
+  color: #1a73e8;
+}
+
+/* Auth form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-input {
+  padding: 10px 14px;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+}
+
+.auth-input:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(26,115,232,0.18);
+}
+
+/* ————————————————————————————— */
+/*              GOOGLE LOGIN         */
+/* ————————————————————————————— */
+
+.google-login-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.auth-or {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* <-- centers horizontally */
+  gap: 10px;
+  margin: 16px 0;
+  font-size: 14px;
+  color: #6b7280;
+  width: 100%;
+  text-align: center;
+}
+
+.auth-or::before,
+.auth-or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d1d5db; /* subtle grey line */
+}
+
+
+/* ————————————————————————————— */
+/*               HOME PAGE           */
+/* ————————————————————————————— */
+
+.home-main {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.home-text {
+  color: #5f6368;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+/* ————————————————————————————— */
+/*           FOOTER GOOGLE STYLE     */
+/* ————————————————————————————— */
+
+.todo-footer {
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 12px;
+  color: #5f6368;
+}
+
+/* ————————————————————————————— */
+/*              MOBILE FIXES         */
+/* ————————————————————————————— */
+
+@media (max-width: 640px) {
+  .todo-card {
+    padding: 20px 16px;
+  }
+
+  .todo-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .header-right {
+    gap: 12px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .todo-input {
+    width: 100%;
+  }
+}
