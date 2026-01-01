@@ -262,7 +262,7 @@ See [LICENSE](LICENSE) file for details.
 
 **Sanjay Choudhari**  
 MERN Stack Developer  
-GitHub: [https://github.com/Sanjaymo](https://github.com/Sanjaymo)
+Portfolio: [https://sanjaymo.github.io/](https://sanjaymo.github.io/)
 
 ---
 
